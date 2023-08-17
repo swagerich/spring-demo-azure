@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -20,5 +22,14 @@ public class Usuario {
 
     private String name;
 
-    private String lastName;
+    private String mail;
+
+    private Integer phone;
+
+    private BigDecimal price;
+
+    @Enumerated(EnumType.STRING)
+    private PropertyType propertyType;
+
+    private String ubications;
 }
